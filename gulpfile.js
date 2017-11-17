@@ -21,5 +21,8 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
+// Other Task Runners here... (minify etc.)
+
+
 // Default Task
 gulp.task('default', ['serve']);
