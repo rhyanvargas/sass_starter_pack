@@ -8,7 +8,12 @@
 html {
   box-sizing: border-box;
 }
-
+/**
+ * IF BOOTSTRAP IS USED with a FIxed Navbar, use this...
+ */
+body {
+padding-top: 50px;
+}
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value

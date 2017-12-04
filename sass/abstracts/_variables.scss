@@ -14,6 +14,7 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 /// @type Color
 $text-color: rgb(84, 84, 84) !default;
 
+
 /// Main brand color
 /// @type Color
 $brand-color: rgba(14, 124, 123, 1) !default;
@@ -29,6 +30,10 @@ $mid-grey: rgba(169, 169, 169, 1) !default;
 /// Neutral
 /// @type Color
 $neutral: rgba(239, 239, 239, 1) !default;
+
+/// Dark
+/// @type Color
+$dark-color: #333 !default;
 
 
 

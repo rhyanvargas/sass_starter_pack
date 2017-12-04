@@ -28,3 +28,13 @@
 @function font($path, $base: $base-url) {
   @return asset($base, 'fonts/', $path);
 }
+
+// function
+@function set-text-color($bgcolor) {
+  @if(lightness($bgcolor) > 50) {
+    @return $dark-color;
+  }
+  @else {
+    @return $neutral;
+  }
+}

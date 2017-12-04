@@ -4,6 +4,11 @@
 // Reference: https://sass-guidelin.es/#architecture
 // -----------------------------------------------------------------------------
 
+// Customizations
+  body {
+      padding-top: 50px;
+  }
+
 // Core variables and mixins
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
@@ -49,3 +54,4 @@
 // Utility classes
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
