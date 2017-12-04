@@ -8,17 +8,12 @@
 html {
   box-sizing: border-box;
 }
-<<<<<<< HEAD:sass/base/_base.scss
 /**
  * IF BOOTSTRAP IS USED with a FIxed Navbar, use this...
  */
 body {
 padding-top: 50px;
 }
-=======
-
-
->>>>>>> 46ccb67c99b5c681108a312eadadf77af8dc72ae:src/scss/base/_base.scss
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value

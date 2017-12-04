@@ -22,11 +22,11 @@ var sassdocOptions = {
 gulp.task('sass', function () {
     return gulp
          // Find all `.scss` files from the `css/` folder
-        .src(['sass/*.scss'])
+        .src(['./src/sass/*.scss'])
         // Compile css in expanded mode and to print errors in console:
         .pipe(sass(sassOptions).on('error',sass.logError))
         // Show which specific Sass partial your CSS came from (Debugging in Chrome Dev Tools)
-        .pipe(sourcemaps.write('./assets/css/maps'))
+        .pipe(sourcemaps.write('/assets/css/maps'))
         // Support last 2 versions of every browsers, and IE 8,9
         .pipe(autoprefixer(autoprefixerOptions))
         // Write the resulting CSS in the output folder
@@ -38,7 +38,7 @@ gulp.task('sass', function () {
 // Generate Sass documentation
 gulp.task('sassdoc', function() {
     return gulp 
-        .src(['./sass/*/*.scss'])
+        .src(['./src/sass/*/*.scss'])
         .pipe(sassdoc(sassdocOptions))
         // Release the pressure back and trigger flowing mode (drain)
         // See: http://sassdoc.com/gulp/#drain-event
@@ -48,19 +48,11 @@ gulp.task('sassdoc', function() {
 // Watch Sass & Serve
 gulp.task('serve', ['sass'], function () {
     browserSync.init({
-<<<<<<< HEAD
         injectChanges: true,
         server: "./"
     })
-    gulp.watch(['sass/*/*.scss'], ['sass']);
+    gulp.watch(['./src/sass/*/*.scss'], ['sass']);
     gulp.watch('*.html').on('change', browserSync.reload);
-=======
-        server: "./src"  
-    });
-
-    gulp.watch(['src/scss/*/*.scss'], ['sass']);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
->>>>>>> 46ccb67c99b5c681108a312eadadf77af8dc72ae
 });
 
 // // Make Production Ready
