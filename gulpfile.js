@@ -48,11 +48,19 @@ gulp.task('sassdoc', function() {
 // Watch Sass & Serve
 gulp.task('serve', ['sass'], function () {
     browserSync.init({
+<<<<<<< HEAD
         injectChanges: true,
         server: "./"
     })
     gulp.watch(['sass/*/*.scss'], ['sass']);
     gulp.watch('*.html').on('change', browserSync.reload);
+=======
+        server: "./src"  
+    });
+
+    gulp.watch(['src/scss/*/*.scss'], ['sass']);
+    gulp.watch("src/*.html").on('change', browserSync.reload);
+>>>>>>> 46ccb67c99b5c681108a312eadadf77af8dc72ae
 });
 
 // // Make Production Ready

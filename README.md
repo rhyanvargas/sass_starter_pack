@@ -10,7 +10,7 @@ A light package for compiling Sass and running a dev server.
 1.0.0
 
 ## Usage
-
+*Note: the default setup for this is intended to be used with Bootstrap out of the box. If not using Bootstrap, uncomment `.container` code block located in: `src/scss/base/_helpers.scss`*
 
 ### Installation
 
