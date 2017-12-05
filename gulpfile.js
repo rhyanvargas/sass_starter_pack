@@ -51,7 +51,7 @@ gulp.task('serve', ['sass'], function () {
         injectChanges: true,
         server: "./"
     })
-    gulp.watch(['./src/sass/*/*.scss'], ['sass']);
+    gulp.watch(['./src/sass/*/*.scss','./src/sass/*.scss'], ['sass']);
     gulp.watch('*.html').on('change', browserSync.reload);
 });
 
