@@ -26,7 +26,7 @@ gulp.task('sass', function () {
         // Compile css in expanded mode and to print errors in console:
         .pipe(sass(sassOptions).on('error',sass.logError))
         // Show which specific Sass partial your CSS came from (Debugging in Chrome Dev Tools)
-        .pipe(sourcemaps.write('/assets/css/maps'))
+        .pipe(sourcemaps.write('./assets/css/maps'))
         // Support last 2 versions of every browsers, and IE 8,9
         .pipe(autoprefixer(autoprefixerOptions))
         // Write the resulting CSS in the output folder
